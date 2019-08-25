@@ -94,7 +94,9 @@ export default class DummyPage extends Component{
       </Card.Text>
     </Card.Body>
     </Card>
+    
     </CardColumns>
+
   )
   }
 }

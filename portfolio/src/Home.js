@@ -4,6 +4,11 @@ import Container from 'react-bootstrap/Container';
 import Particles from 'react-particles-js';
 import DummyPage from './DummyPage'
 import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import {Link} from "react-router-dom";
+import Resume from './Vinayak_Malik_Resume (1).pdf'
+
 import './Home.css'
 export default class Home extends Component {
   render() {
@@ -124,7 +129,28 @@ export default class Home extends Component {
         "retina_detect": true
       }}>
         </Particles>
+        <Container>
+        <Card bg='transparent' border='transparent' text='white' className='introCard' ><Card.Body><center>Hello, I'm <span className='name'>Vinayak Malik.</span><br/>
+                I'm a Full-Stack Web Developer.
 
+                </center>
+                </Card.Body>
+<Row>
+<Col xs={12} sm={6}>
+ <Link to ='/Projects'style ={{textDecoration: 'none',  color: '#ffffff'}} >
+                <Button  className ='projectButton' variant="outline-secondary" size="lg" block>Check-Out My <b>Work  </b> </Button>
+</Link>
+</Col>
+<Col xs={12} sm={6}>
+<a  style={{color:'#6c757d'}} href='https://uwprod-my.sharepoint.com/:b:/g/personal/vmalik4_wisc_edu/EeNGmh-UMFRFrSqshkaw6EwBpUieXs91kad4-aM0sRgS3g?e=RIlEdA' target='_blank' rel='noopener noreferrer'>
+                <Button variant="outline-secondary" size="lg" block>  View My <b>Resume</b>
+                </Button>
+                     </a>
+</Col>
+</Row>
+        </Card>
+
+        </Container>
 
 
 </div>

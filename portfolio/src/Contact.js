@@ -18,7 +18,9 @@ export default class Contact extends Component {
       </Card>
 
 <DummyPage/>
-
+<footer>
+  Created my free logo at  <a href = 'https://www.logomakr.com' target='_blank' rel="noopener noreferrer">LogoMakr.com</a>
+</footer>
 
 </div>
 )

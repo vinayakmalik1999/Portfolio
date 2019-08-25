@@ -56,7 +56,7 @@ class App extends Component  {
     <br/>
     <Link to ='/Contact'style ={{'font-size':'1.2rem',textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Contact">Contact</Nav.Link></Link>
     <br/>
-    <Link to ='/Resume'style ={{'font-size':'1.2rem',textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Resume">Resume</Nav.Link></Link>
+   <Nav.Link href="https://uwprod-my.sharepoint.com/:b:/g/personal/vmalik4_wisc_edu/EeNGmh-UMFRFrSqshkaw6EwBpUieXs91kad4-aM0sRgS3g?e=RIlEdA" style ={{'font-size':'1.2rem',textDecoration: 'none'}} target="_blank" rel='noreferrer'>Résume</Nav.Link>
     <br/>
 
        </Nav>
@@ -74,9 +74,7 @@ class App extends Component  {
 </Switch>
 
 </Router>
-<footer>
-  Created my free logo at  <a href = 'https://www.logomakr.com' target='_blank' rel="noreferrer">LogoMakr.com</a>
-</footer>
+
 </div>
 
   );
