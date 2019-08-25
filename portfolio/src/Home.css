@@ -1,11 +1,16 @@
 
 canvas{
-  background-color: #000000;
+  background-color: #0d0d0d;
   margin: 0px;
   border: 0;
      overflow: hidden; /*  Disable scrollbars */
      display: block;
-    
+height:-webkit-fill-available;
+width:-webkit-fill-available;
      vertical-align: bottom;
 
+}
+.button1{
+  position: absolute;
+  margin-top: -10px
 }

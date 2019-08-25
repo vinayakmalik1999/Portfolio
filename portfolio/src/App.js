@@ -15,6 +15,10 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LogoMakr_2uSucr from './LogoMakr_2uSucr.png'
+import { Offline } from 'react-detect-offline'
+import { MdSignalWifiOff } from "react-icons/md";
+import {IconContext} from 'react-icons';
 
 class App extends Component  {
 
@@ -22,29 +26,44 @@ class App extends Component  {
   return (
     <div>
 <Router>
-    <Navbar style={{'background-color':'#000000'}}collapseOnSelect variant="dark" sticky='top' expand="md">
-       <Navbar.Brand>
+    <Navbar style={{'background-color':'#000000'}}collapseOnSelect variant="dark" fixed ='top' expand="md">
+       <Navbar.Brand style={{padding:'0','margin-left':'-27px'}}>
+       <Link to ='/'style ={{textDecoration: 'none',  color: '#ffffff'}} >
          <img
-           alt=""
-
-           width="30"
-           height="30"
+           alt="LOGO"
+           src={LogoMakr_2uSucr}
+           width="125"
+           height="56.3"
            className="d-inline-block align-top"
          />
-
+         </Link>
        </Navbar.Brand>
+       <Offline>
+       <Navbar.Brand>
+       <IconContext.Provider value={{ color: "#747474", className: "OfflineIcon",size: '2em' }}>
+       <MdSignalWifiOff/>
+       </IconContext.Provider>
+     </Navbar.Brand>
+
+       </Offline>
        <Navbar.Toggle style={{'border-color':'transparent', outline:'transparent'}} aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse style={{height:'100px'}} id="responsive-navbar-nav">
-       <Nav className="mx-auto">
-    <Link to ='/About'style ={{textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/About">About </Nav.Link></Link>
-    <Link to ='/Projects'style ={{textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Projects">Projects</Nav.Link></Link>
-    <Link to ='/Contact'style ={{textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Contact">Contact</Nav.Link></Link>
-    <Link to ='/Resume'style ={{textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Resume">Resume</Nav.Link></Link>
+  <Navbar.Collapse id="responsive-navbar-nav">
+       <Nav className="ml-auto">
+       <br/>
+<Link to ='/About'style ={{'font-size':'1.2rem',textDecoration: 'none',  color: '#ffffff'}} > <Nav.Link href="/About">About </Nav.Link></Link>
+<br/>
+    <Link to ='/Projects'style ={{'font-size':'1.2rem',textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Projects">Projects</Nav.Link></Link>
+    <br/>
+    <Link to ='/Contact'style ={{'font-size':'1.2rem',textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Contact">Contact</Nav.Link></Link>
+    <br/>
+    <Link to ='/Resume'style ={{'font-size':'1.2rem',textDecoration: 'none',  color: '#fff'}} > <Nav.Link href="/Resume">Resume</Nav.Link></Link>
+    <br/>
 
        </Nav>
        </Navbar.Collapse>
 
      </Navbar>
+
 
 <Switch>
  <Route exact path="/" component={Home}/>
@@ -55,6 +74,9 @@ class App extends Component  {
 </Switch>
 
 </Router>
+<footer>
+  Created my free logo at  <a href = 'https://www.logomakr.com' target='_blank' rel="noreferrer">LogoMakr.com</a>
+</footer>
 </div>
 
   );

@@ -15,9 +15,28 @@ button:click{
   outline: transparent;
 }
 .bg-dark{
-  background-color: #000000
+  background-color: #000000;
+
 }
 .navbar-collapse{
   height: 100% ;
-  
+
+}
+.navbar-toggler-icon{
+  width:1.9em;
+  height:1.7em;
+}
+.navbar{
+  opacity: 0.90;
+
+}
+footer{
+  margin-bottom: -10px;
+  font-size: 10px;
+  opacity: 0.8;
+
+}
+.OfflineIcon{
+  animation: 0.8s ease-out 0s 1 slideInFromLeft;
+  margin-left: -2em;
 }

@@ -13,13 +13,13 @@ export default class Home extends Component {
       <div>
 
 
-      <Particles style ={{height:'-webkit-fill-available', width:'-webkit-fill-available'}}  params={{
+      <Particles height='-webkit-fill-available' width='-webkit-fill-available'  params={{
         "particles": {
           "number": {
-            "value": 80,
+            "value": 40,
             "density": {
               "enable": true,
-              "value_area": 800
+              "value_area": 1000
             }
           },
           "color": {
@@ -28,26 +28,26 @@ export default class Home extends Component {
           "shape": {
             "type": "circle",
             "stroke": {
-              "width": 0,
+              "width": 10,
               "color": "#000000"
             },
             "polygon": {
-              "nb_sides": 5
+              "nb_sides": 4
             },
             "image": {
-              "src": "img/github.svg",
+              "src": "",
               "width": 100,
               "height": 100
             }
           },
           "opacity": {
-            "value": 0.5,
+            "value": 1,
             "random": false,
             "anim": {
               "enable": false,
               "speed": 1,
               "opacity_min": 0.1,
-              "sync": false
+              "sync": false,
             }
           },
           "size": {
@@ -62,7 +62,7 @@ export default class Home extends Component {
           },
           "line_linked": {
             "enable": true,
-            "distance": 150,
+            "distance": 180,
             "color": "#ffffff",
             "opacity": 0.4,
             "width": 1
@@ -123,8 +123,8 @@ export default class Home extends Component {
         },
         "retina_detect": true
       }}>
-      <Button> HELOD</Button>
         </Particles>
+
 
 
 </div>
