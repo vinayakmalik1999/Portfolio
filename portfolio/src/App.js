@@ -10,7 +10,6 @@ import About from './About'
 import Contact from './Contact'
 import Home from './Home'
 import Projects from './Projects'
-import Resume from './Resume'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
@@ -70,7 +69,7 @@ class App extends Component  {
  <Route path="/About" component={About}/>
  <Route path ="/Projects" component ={Projects}/>
  <Route path ="/Contact" component ={Contact}/>
- <Route path ="/Resume" component ={Resume}/>
+ 
 </Switch>
 
 </Router>

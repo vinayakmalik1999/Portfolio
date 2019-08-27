@@ -7,7 +7,6 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import {Link} from "react-router-dom";
-import Resume from './Vinayak_Malik_Resume (1).pdf'
 
 import './Home.css'
 export default class Home extends Component {
