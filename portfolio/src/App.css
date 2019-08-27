@@ -44,11 +44,23 @@ footer{
   opacity: 0.8;
 
 }
+@keyframes fadeInOpacity {
+  0%{
+     opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
 .OfflineIcon{
   animation: 0.8s ease-out 0s 1 slideInFromLeft;
   margin-left: -2em;
 }
 iframe{
+  animation: 1s ease-out 0s 1 slideInFromTop;
+
+}
+.topNavbar{
   animation: 1s ease-out 0s 1 slideInFromTop;
 
 }

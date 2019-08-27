@@ -25,7 +25,7 @@ class App extends Component  {
   return (
     <div>
 <Router>
-    <Navbar style={{'background-color':'#000000'}}collapseOnSelect variant="dark" fixed ='top' expand="md">
+    <Navbar className='topNavbar' style={{'background-color':'#000000'}}collapseOnSelect variant="dark" fixed ='top' expand="md">
        <Navbar.Brand style={{padding:'0','margin-left':'-27px'}}>
        <Link to ='/'style ={{textDecoration: 'none',  color: '#ffffff'}} >
          <img
@@ -69,7 +69,7 @@ class App extends Component  {
  <Route path="/About" component={About}/>
  <Route path ="/Projects" component ={Projects}/>
  <Route path ="/Contact" component ={Contact}/>
- 
+
 </Switch>
 
 </Router>

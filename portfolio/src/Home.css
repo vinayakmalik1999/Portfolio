@@ -5,7 +5,12 @@ canvas{
   border: 0;
      overflow: hidden; /*  Disable scrollbars */
      display: block;
+
+     height: -moz-max-content;
+
 height:-webkit-fill-available;
+width: 100%;
+
 width:-webkit-fill-available;
      vertical-align: bottom;
 
