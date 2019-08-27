@@ -12,7 +12,6 @@ import Home from './Home'
 import Projects from './Projects'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LogoMakr_2uSucr from './LogoMakr_2uSucr.png'
 import { Offline } from 'react-detect-offline'

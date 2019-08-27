@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Particles from 'react-particles-js';
-import DummyPage from './DummyPage'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -20,7 +19,7 @@ export default class Home extends Component {
       <Particles height='-webkit-fill-available' width='-webkit-fill-available'  params={{
         "particles": {
           "number": {
-            "value": 40,
+            "value": 45,
             "density": {
               "enable": true,
               "value_area": 1000

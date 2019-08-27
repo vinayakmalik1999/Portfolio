@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Card from 'react-bootstrap/Card';
-import DummyPage from './DummyPage'
 import { GiCogLock,GiProcessor,GiPowerLightning } from "react-icons/gi";
 import {IconContext} from 'react-icons';
 import './About.css'
@@ -31,11 +30,11 @@ export default class About extends Component {
       <br/><br/><br/>
       <Card  border="light" className='efficiencyCard'>
     <Container>
-      <ScrollAnimation animateIn='fadeInLeft'>
+      <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
       <Card.Title class='efficiencyCardTitle'>Progressive</Card.Title>
       </ScrollAnimation>
       <Card.Body>
-      <ScrollAnimation animateIn='zoomIn'>
+      <ScrollAnimation animateIn='zoomIn' animateOnce={true}>
 
       <Row>
 
@@ -58,11 +57,11 @@ export default class About extends Component {
     <br/><br/>
   <Card  border="light" className='efficiencyCard'>
 <Container>
-  <ScrollAnimation animateIn='fadeInLeft'>
+  <ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
   <Card.Title class='efficiencyCardTitle'>Efficient</Card.Title>
   </ScrollAnimation>
   <Card.Body>
-  <ScrollAnimation animateIn='zoomIn'>
+  <ScrollAnimation animateIn='zoomIn' animateOnce={true}>
 
   <Row>
 
@@ -88,11 +87,11 @@ export default class About extends Component {
 
 <Card  border="light" className='efficiencyCard'>
 <Container>
-<ScrollAnimation animateIn='fadeInLeft'>
+<ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
 <Card.Title class='efficiencyCardTitle'>Responsive</Card.Title>
 </ScrollAnimation>
 <Card.Body>
-<ScrollAnimation animateIn='zoomIn'>
+<ScrollAnimation animateIn='zoomIn' animateOnce={true}>
 
 <Row>
 
@@ -101,7 +100,7 @@ export default class About extends Component {
 
 
 <Col xs ={3}>
-<img src={Responsive}  className='responsiveImage'/>
+<img src={Responsive}  alt='' className='responsiveImage'/>
 
 </Col>
   </Row>
@@ -114,11 +113,11 @@ export default class About extends Component {
 
 <Card  border="light" className='efficiencyCard'>
 <Container>
-<ScrollAnimation animateIn='fadeInLeft'>
+<ScrollAnimation animateIn='fadeInLeft' animateOnce={true}>
 <Card.Title class='efficiencyCardTitle'>Fast</Card.Title>
 </ScrollAnimation>
 <Card.Body>
-<ScrollAnimation animateIn='zoomIn'>
+<ScrollAnimation animateIn='zoomIn' animateOnce={true}>
 
 <Row>
 
@@ -138,7 +137,7 @@ export default class About extends Component {
 </Card.Body>
   </Container>
 </Card>
-<a href ='#top'>aaa</a>
+
 
 <br/><br/><br/>
 </div>
