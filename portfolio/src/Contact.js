@@ -9,7 +9,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
-
+import { FaCopyright,FaChevronUp } from "react-icons/fa";
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 export default class Contact extends Component {
   constructor(props){
     super(props);
@@ -136,12 +138,29 @@ export default class Contact extends Component {
 </Form>
 </ScrollAnimation>
 </Container>
+<br/>
+<Navbar className='BottomNavbar' style={{'background-color':'#000000'}}  variant="dark"  >
+<Navbar.Brand>
+<IconContext.Provider value={{ color: "#ffffff" }}>
+<FaCopyright/>
+</IconContext.Provider>
+    {' Vinayak Malik'}
+  </Navbar.Brand>
 
-        <footer>
-  Created my free logo at  <a href = 'https://www.logomakr.com' target='_blank' rel="noopener noreferrer">LogoMakr.com</a>
-</footer>
-
+  <div className ='footer'>
+  Created my free logo at <a className ='footer' href = 'https://www.logomakr.com' target='_blank' rel="noopener noreferrer">LogoMakr.com</a>
+  </div>
+<Nav className="ml-auto">
+<a href ='#top'>
+<IconContext.Provider value={{ color: "#ffffff" }}>
+<FaChevronUp/>
+</IconContext.Provider>
+</a>
+</Nav>
+</Navbar>
 </div>
+
+
 )
 }
 }

@@ -18,6 +18,8 @@ import { Offline } from 'react-detect-offline'
 import { MdSignalWifiOff } from "react-icons/md";
 import {IconContext} from 'react-icons';
 
+
+
 class App extends Component  {
 
   render(){
@@ -72,7 +74,6 @@ class App extends Component  {
 </Switch>
 
 </Router>
-
 </div>
 
   );

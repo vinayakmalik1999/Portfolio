@@ -9,6 +9,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import Container from 'react-bootstrap/Container'
 import Responsive from './responsive-design.png'
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
+import { FaCopyright,FaChevronUp } from "react-icons/fa";
+
 export default class About extends Component {
   render() {
     return (
@@ -140,6 +144,25 @@ export default class About extends Component {
 
 
 <br/><br/><br/>
+<Navbar className='BottomNavbar' style={{'background-color':'#000000'}}  variant="dark"  >
+<Navbar.Brand>
+<IconContext.Provider value={{ color: "#ffffff" }}>
+<FaCopyright/>
+</IconContext.Provider>
+    {' Vinayak Malik'}
+  </Navbar.Brand>
+
+  <div className ='footer'>
+  Created my free logo at <a className ='footer' href = 'https://www.logomakr.com' target='_blank' rel="noopener noreferrer">LogoMakr.com</a>
+  </div>
+<Nav className="ml-auto">
+<a href ='#top'>
+<IconContext.Provider value={{ color: "#ffffff" }}>
+<FaChevronUp/>
+</IconContext.Provider>
+</a>
+</Nav>
+</Navbar>
 </div>
 )
 }
